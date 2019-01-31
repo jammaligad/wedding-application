@@ -332,6 +332,8 @@ html.with-statusbar.device-iphone-x .framework7-root {
   height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  background: url("../images/cover-1.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 .page.stacked {
   display: none;

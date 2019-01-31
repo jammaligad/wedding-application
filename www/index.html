@@ -11,8 +11,11 @@
     <title>My App</title>
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
+    
   </head>
   <body>
     <!-- App root element -->
@@ -24,20 +27,59 @@
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
         <div data-name="home" class="page">
-
-          <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Wedding</div>
+          <div class="navbar color-theme-orange">
+              <div class="navbar-inner sliding">
+                <div id="header" class="title">Jess & Gabe</div>
+              </div>
+          </div>
+          <div class="toolbar tabbar color-theme-black">
+              <div class="toolbar-inner">
+                <!-- Links have "tab-link" class instead of just "link" to switch tabs -->
+                <a href="#tab-1" class="tab-link tab-link-active">THE WEDDING</a>
+                <a href="#tab-2" class="tab-link">THE GROOM</a>
+                <a href="#tab-3" class="tab-link">THE BRIDE</a>
+              </div>
             </div>
+            <!-- Tabs -->
+            <div class="tabs">
+              <!-- First tab, active -->
+              <div class="page-content tab tab-active" id="tab-1">
+                <div id="wedding-block" class="block">
+                    <div id="test">test</div>
+                </div>
+              </div>
+              <!-- Second tab -->
+              <div class="page-content tab" id="tab-2">
+                <div class="block">
+                  <p><b>Tab 2 content</b></p>
+                  ...
+                </div>
+              </div>
+              <!-- Third tab -->
+              <div class="page-content tab" id="tab-3">
+                <div class="block">
+                  <p><b>Tab 3 content</b></p>
+                  ...
+                </div>
+              </div>
+            </div>
+            
+          <!-- 
+          <div class="page-content hide-navbar-on-scroll">
+              
           </div>
+          -->
 
-          <!-- Scrollable page content -->
-          <div class="page-content">
-                
-            <!-- Link to another page -->
-            <a href="/about/">About app</a>
-          </div>
+          <div class="toolbar toolbar-bottom-md custom color-theme-orange">
+              <div class="toolbar-inner">
+                <a href="#" class="link"><i class="material-icons">favorite</i></a>
+                <a href="#" class="link"><i class="material-icons">people</i></a>
+                <a href="#" class="link"><i class="material-icons">list_alt</i></a>
+                <a href="#" class="link"><i class="material-icons">accessibility_new</i></a>
+                <a href="#" class="link"><i class="material-icons">pin_drop</i></a>
+                <a href="#" class="link"><i class="material-icons">restaurant</i></a>
+              </div>
+            </div>
         </div>
       </div>
     </div>
