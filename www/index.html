@@ -27,60 +27,99 @@
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
         <div data-name="home" class="page">
-          <div class="navbar color-theme-orange">
+          
+      </div>
+      <div class="views tabs ios-edges">
+        <div class="toolbar tabbar-labels toolbar-bottom-md toolbar-custom color-theme-black">
+          <div class="toolbar-inner">
+            <a href="#view-home" class="tab-link custom-tab tab-link-active">
+              <i class="icon f7-icons ios-only">home</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+              <i class="material-icons md-18">favorite</i>
+              <span class="tabbar-label">WEDDING</span>
+            </a>
+            <a href="#view-people" class="tab-link custom-tab">
+              <i class="icon f7-icons ios-only">list</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+              <i class="material-icons md-18">people</i>
+              <span class="tabbar-label">PEOPLE</span>
+            </a>
+            <a href="#view-program" class="tab-link custom-tab">
+              <i class="icon f7-icons ios-only">settings</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+              <i class="material-icons md-18">list_alt</i>
+              <span class="tabbar-label">PROGRAM</span>
+            </a>
+            <a href="#view-attire" class="tab-link custom-tab">
+              <i class="icon f7-icons ios-only">settings</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+              <i class="material-icons md-18">accessibility_new</i>
+              <span class="tabbar-label">ATTIRE</span>
+            </a>
+            <a href="#view-location" class="tab-link custom-tab">
+              <i class="icon f7-icons ios-only">settings</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+              <i class="material-icons md-18">pin_drop</i>
+              <span class="tabbar-label">LOCATION</span>
+            </a>
+            <a href="#view-food" class="tab-link custom-tab">
+              <i class="icon f7-icons ios-only">settings</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+              <i class="material-icons md-18">restaurant</i>
+              <span class="tabbar-label">FOOD</span>
+            </a>
+          </div>
+        </div>
+
+        <div id="view-home" class="view view-main tab tab-active">
+          <!-- Page, data-name contains page name which can be used in page callbacks -->
+          <div class="page" data-name="home">
+            <!-- Top Navbar -->
+            <div class="navbar color-theme-orange">
               <div class="navbar-inner sliding">
                 <div id="header" class="title">Jess & Gabe</div>
               </div>
           </div>
-          <div class="toolbar tabbar color-theme-black">
-              <div class="toolbar-inner">
-                <!-- Links have "tab-link" class instead of just "link" to switch tabs -->
-                <a href="#tab-1" class="tab-link tab-link-active">THE WEDDING</a>
-                <a href="#tab-2" class="tab-link">THE GROOM</a>
-                <a href="#tab-3" class="tab-link">THE BRIDE</a>
+  
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="block block-strong inset">
+                <p id="headertext"><img src="images/logo.png" class="responsive"><hr width="10%"/><p id="headertext">FEBRUARY 14, 2019</p></p>
               </div>
             </div>
-            <!-- Tabs -->
-            <div class="tabs">
-              <!-- First tab, active -->
-              <div class="page-content tab tab-active" id="tab-1">
-                <div id="wedding-block" class="block">
-                    <div id="test">test</div>
-                </div>
-              </div>
-              <!-- Second tab -->
-              <div class="page-content tab" id="tab-2">
-                <div class="block">
-                  <p><b>Tab 2 content</b></p>
-                  ...
-                </div>
-              </div>
-              <!-- Third tab -->
-              <div class="page-content tab" id="tab-3">
-                <div class="block">
-                  <p><b>Tab 3 content</b></p>
-                  ...
-                </div>
-              </div>
-            </div>
-            
-          <!-- 
-          <div class="page-content hide-navbar-on-scroll">
-              
           </div>
-          -->
-
-          <div class="toolbar toolbar-bottom-md custom color-theme-orange">
-              <div class="toolbar-inner">
-                <a href="#" class="link"><i class="material-icons">favorite</i></a>
-                <a href="#" class="link"><i class="material-icons">people</i></a>
-                <a href="#" class="link"><i class="material-icons">list_alt</i></a>
-                <a href="#" class="link"><i class="material-icons">accessibility_new</i></a>
-                <a href="#" class="link"><i class="material-icons">pin_drop</i></a>
-                <a href="#" class="link"><i class="material-icons">restaurant</i></a>
+        </div>
+        <div id="view-people" class="view tab">
+          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+          <div class="page" data-name="home">
+            <!-- Top Navbar -->
+            <div class="navbar color-theme-orange">
+              <div class="navbar-inner sliding">
+                <div id="header" class="title">Jess & Gabe</div>
+              </div>
+          </div>
+  
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="block block-strong inset">
+                
               </div>
             </div>
+          </div>
         </div>
+        <div id="view-program" class="view tab">
+          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+        </div>
+        <div id="view-attire" class="view tab">
+          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+        </div>
+        <div id="view-location" class="view tab">
+          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+        </div>
+        <div id="view-food" class="view tab">
+          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+        </div>
+      </div>
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->

@@ -12,6 +12,27 @@
     height: 100%;
 }
 
+.custom-tab {
+    padding: 5px !important;
+    font-size: 8px !important;
+}
+
+.toolbar-custom {
+    height: 40px !important;
+}
+
+.material-icons.md-18 { font-size: 18px; margin-top: 3px;}
+.material-icons.md-24 { font-size: 24px; margin-top: 3px;}
+.material-icons.md-36 { font-size: 36px; margin-top: 3px;}
+.material-icons.md-48 { font-size: 48px; margin-top: 3px;}
+
+#headertext {
+    font-family: Helvetica;
+    text-align: center !important;
+    font-size: 16px !important;
+    color: white;
+}
+
 #test {
     transform: translate(50%, 50%)
 }
@@ -45,28 +66,6 @@ img.responsive {
     background: url("../images/cover-2-edit.jpg") no-repeat center center fixed !important;
     background-size: cover !important;
 }
-
-.custom{
-    height: 44px !important;
-  }
-  .toolbar-inner{
-    max-height: 44px;
-    bottom: 0 !important;
-    top: auto;
-  }
-  .toolbar-text-container {
-    position: absolute;
-    height: 25px;
-    top: 0;
-    background: #292929;
-    width: 100%;
-    text-align: center;
-    line-height: 30px;
-  }
-  
-  .toolbar-text-container span {
-    font-size: 12px;
-  }
 
 @font-face {
     font-family: 'Framework7 Icons';
