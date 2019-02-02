@@ -1,3 +1,5 @@
+/* ---------- ADD FALLING FLOWERS JS TO MAIN PAGE ----------- */
+
 #header {
     font-family:Helvetica;
     font-weight: bold;
@@ -15,7 +17,7 @@ color: #8e8e93;
 }
 
 .color-theme-wedding {
-    color: #dfbf9f;
+    background: #e3e5e7 !important;
 }
 
 #wedding-block {
@@ -51,6 +53,32 @@ div[class*="col"] {
     text-align: center;
     padding: 5px;
   }
+
+.wedding-page {
+    background: url("../images/cover-7.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+.frame-test {
+    max-width : 100%; /* or max-width : 100% */
+    height: auto; 
+    overflow: hidden;
+    position: absolute;
+}
+
+.groom-panel {
+    background: url("../images/gabe2.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+.bride-panel {
+    background: url("../images/cover-7.jpg") no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+.theme-wedding {
+  background: #f0decb !important;
+}
 
 .md .navbar .title {
     text-align: center;
