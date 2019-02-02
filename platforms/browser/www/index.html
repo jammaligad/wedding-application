@@ -22,12 +22,35 @@
     <div id="app">
       <!-- Statusbar overlay -->
       <div class="statusbar"></div>
-
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
-          
+        <!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-cover theme-dark">
+        <div class="view">
+          <div class="page">
+            <div class="navbar color-theme-black">
+              <div class="navbar-inner">
+                <div class="title">Left Panel</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="block">Left panel content goes here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right panel with reveal effect-->
+      <div class="panel panel-right panel-reveal theme-dark">
+        <div class="view">
+          <div class="page">
+            <div class="navbar color-theme-black">
+              <div class="navbar-inner">
+                <div class="title">Right Panel</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="block">Right panel content goes here</div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="views tabs ios-edges">
         <div class="toolbar tabbar-labels toolbar-bottom-md toolbar-custom color-theme-black">
@@ -77,18 +100,43 @@
             <!-- Top Navbar -->
             <div class="navbar color-theme-orange">
               <div class="navbar-inner sliding">
-                <div id="header" class="title">Jess & Gabe</div>
+                  <div class="left">
+                      <a href="#" class="link icon-only panel-open" data-panel="left">
+                        <i class="icon f7-icons ios-only">menu</i>
+                        <i class="icon material-icons md-only">account_circle</i>
+                      </a>
+                    </div>
+                    <div id="header" class="title sliding">Jess & Gabe</div>
+                  <div class="right">
+                    <a href="#" class="link icon-only panel-open" data-panel="right">
+                      <i class="icon f7-icons ios-only">menu</i>
+                      <i class="icon material-icons md-only">account_circle</i>
+                    </a>
+                  </div>
               </div>
           </div>
   
             <!-- Scrollable page content-->
             <div class="page-content">
-              <div class="block block-strong inset">
-                <p id="headertext"><img src="images/logo.png" class="responsive"><hr width="10%"/><p id="headertext">FEBRUARY 14, 2019</p></p>
+              <div class="row no-gap">
+                <div class="col">        
+                    <p id="headertext"><img src="images/logo.png" class="responsive"><hr width="10%"/><p id="headertext">FEBRUARY 14, 2019<br/> testestest</p></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="block"
+                </div>
+                <div class="col">
+                    
+                </div>
               </div>
             </div>
           </div>
         </div>
+        </div>
+      </div>
+
         <div id="view-people" class="view tab">
           <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
           <div class="page" data-name="home">
@@ -119,7 +167,6 @@
         <div id="view-food" class="view tab">
           <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
         </div>
-      </div>
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->

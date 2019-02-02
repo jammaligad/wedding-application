@@ -4,6 +4,16 @@
     font-size: 16px;
   }
 
+.demo-card-header-pic .card-header {
+height: 40vw;
+background-size: cover;
+background-position: center;
+color: #fff;
+}
+.demo-card-header-pic .card-content-padding .date{
+color: #8e8e93;
+}
+
 .color-theme-wedding {
     color: #dfbf9f;
 }
@@ -48,6 +58,11 @@ div[class*="col"] {
     }
 
 img.responsive {
+    max-width : 100%; /* or max-width : 100% */
+    height: auto; 
+}
+
+.icon-responsive {
     max-width : 100%; /* or max-width : 100% */
     height: auto; 
 }
