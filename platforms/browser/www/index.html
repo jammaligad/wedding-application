@@ -2,90 +2,87 @@
 <html>
   <head>
     <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Color theme for statusbar -->
-    <meta name="theme-color" content="#2196f3">
+    <meta name="theme-color" content="#2196f3" />
     <!-- Your app title -->
-    <title>My App</title>
+    <title>Jess & Gabe | Save the date</title>
     <!-- Path to Framework7 Library CSS -->
-    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/my-app.css">
-    
+    <link rel="stylesheet" href="css/my-app.css" />
   </head>
   <body>
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
       <div class="statusbar"></div>
-        <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover">
-        <div class="view">
-          <div class="page color-theme-wedding">
-            <div class="navbar color-theme-black">
-              <div class="navbar-inner">
-                <div class="title">The Bride</div>
-              </div>
-            </div>
-            <div class="page-content">
-              <div class="block-content"><img src="images/floralframe.png" class="responsive"/></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Right panel with reveal effect-->
-      <div class="panel panel-right panel-cover">
-        <div class="view">
-          <div class="page color-theme-wedding">
-            <div class="navbar color-theme-black">
-              <div class="navbar-inner">
-                <div class="title">The Groom</div>
-              </div>
-            </div>
-            <div class="page-content">
-              <div class="block">Right panel content goes here</div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="views tabs ios-edges">
-        <div class="toolbar tabbar-labels toolbar-bottom-md toolbar-custom color-theme-black">
+        <div
+          class="toolbar tabbar-labels toolbar-bottom-md toolbar-custom color-theme-black"
+        >
           <div class="toolbar-inner">
-            <a href="#view-home" class="tab-link custom-tab tab-link-active">
+            <a href="/" class="tab-link custom-tab" data-route-tab-id="home">
               <i class="icon f7-icons ios-only">home</i>
               <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
               <i class="material-icons md-18">favorite</i>
               <span class="tabbar-label">WEDDING</span>
             </a>
-            <a href="#view-people" class="tab-link custom-tab">
+            <a
+              href="/people/"
+              class="tab-link custom-tab"
+              data-route-tab-id="people"
+            >
               <i class="icon f7-icons ios-only">list</i>
               <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
               <i class="material-icons md-18">people</i>
               <span class="tabbar-label">PEOPLE</span>
             </a>
-            <a href="#view-program" class="tab-link custom-tab">
+            <a
+              href="/program/"
+              class="tab-link custom-tab"
+              data-route-tab-id="program"
+            >
               <i class="icon f7-icons ios-only">settings</i>
               <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
               <i class="material-icons md-18">list_alt</i>
               <span class="tabbar-label">PROGRAM</span>
             </a>
-            <a href="#view-attire" class="tab-link custom-tab">
+            <a
+              href="/attire/"
+              class="tab-link custom-tab"
+              data-route-tab-id="attire"
+            >
               <i class="icon f7-icons ios-only">settings</i>
               <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
               <i class="material-icons md-18">accessibility_new</i>
               <span class="tabbar-label">ATTIRE</span>
             </a>
-            <a href="#view-location" class="tab-link custom-tab">
+            <a
+              href="/location/"
+              class="tab-link custom-tab"
+              data-route-tab-id="location"
+            >
               <i class="icon f7-icons ios-only">settings</i>
               <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
               <i class="material-icons md-18">pin_drop</i>
-              <span class="tabbar-label">LOCATION</span>
+              <span class="tabbar-label">VENUE</span>
             </a>
-            <a href="#view-food" class="tab-link custom-tab">
+            <a
+              href="/food/"
+              class="tab-link custom-tab"
+              data-route-tab-id="food"
+            >
               <i class="icon f7-icons ios-only">settings</i>
               <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
               <i class="material-icons md-18">restaurant</i>
@@ -93,85 +90,25 @@
             </a>
           </div>
         </div>
-
-        <div id="view-home" class="view view-main tab tab-active">
-          <!-- Page, data-name contains page name which can be used in page callbacks -->
-          <div class="page wedding-page" data-name="home" id="petals">
-            <!-- Top Navbar -->
-            <div class="navbar color-theme-blue">
-              <div class="navbar-inner sliding">
-                  <div class="left">
-                      <a href="#" class="link icon-only panel-open" data-panel="left">
-                        <i class="icon f7-icons ios-only">menu</i>
-                        <i class="icon material-icons md-only">account_circle</i>
-                      </a>
-                    </div>
-                    <div id="header" class="title sliding">Jess & Gabe</div>
-                  <div class="right">
-                    <a href="#" class="link icon-only panel-open" data-panel="right">
-                      <i class="icon f7-icons ios-only">menu</i>
-                      <i class="icon material-icons md-only">account_circle</i>
-                    </a>
-                  </div>
-              </div>
-          </div>
-  
-            <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="row no-gap">
-                <img src="images/headerframe2.png" class="frame-test"/>
-                <div class="col frame-test">
-                    <p id="headertext"><img src="images/header.png" class="responsive"></p>
-                  </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="block"
-                </div>
-                <div class="col">
-                    
-                </div>
-              </div>
+        <div class="view view-main">
+          <div class="page">
+            <div class="tabs tabs-routable">
+              <div class="page-content tab" id="home"></div>
+              <div class="page-content tab" id="people"></div>
+              <div class="page-content tab" id="program"></div>
+              <div class="page-content tab" id="attire"></div>
+              <div class="page-content tab" id="location"></div>
+              <div class="page-content tab" id="food"></div>
             </div>
           </div>
-        </div>
-        </div>
-      </div>
-
-        <div id="view-people" class="view tab">
-          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-          <div class="page" data-name="home">
-            <!-- Top Navbar -->
-            <div class="navbar color-theme-orange">
-              <div class="navbar-inner sliding">
-                <div id="header" class="title">Jess & Gabe</div>
-              </div>
-          </div>
-  
-            <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="block block-strong inset">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="view-program" class="view tab">
-          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-        </div>
-        <div id="view-attire" class="view tab">
-          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-        </div>
-        <div id="view-location" class="view tab">
-          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-        </div>
-        <div id="view-food" class="view tab">
-          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
         </div>
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script
+      type="text/javascript"
+      src="lib/framework7/js/framework7.min.js"
+    ></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
   </body>

@@ -1,79 +1,106 @@
 /* ---------- ADD FALLING FLOWERS JS TO MAIN PAGE ----------- */
 
 #header {
-    font-family:Helvetica;
-    font-weight: bold;
-    font-size: 16px;
-  }
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px;
+}
 
 .demo-card-header-pic .card-header {
-height: 40vw;
-background-size: cover;
-background-position: center;
-color: #fff;
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
-.demo-card-header-pic .card-content-padding .date{
-color: #8e8e93;
+.demo-card-header-pic .card-content-padding .date {
+  color: #8e8e93;
 }
 
 .color-theme-wedding {
-    background: #dde5ec !important;
+  background: #dde5ec !important;
 }
 
 #wedding-block {
-    height: 100%;
+  height: 100%;
 }
 
 .custom-tab {
-    padding: 5px !important;
-    font-size: 8px !important;
+  padding: 5px !important;
+  font-size: 8px !important;
 }
 
 .toolbar-custom {
-    height: 40px !important;
+  height: 40px !important;
 }
 
-.material-icons.md-18 { font-size: 18px; margin-top: 3px;}
-.material-icons.md-24 { font-size: 24px; margin-top: 3px;}
-.material-icons.md-36 { font-size: 36px; margin-top: 3px;}
-.material-icons.md-48 { font-size: 48px; margin-top: 3px;}
+.toolbar-color {
+  background-color: #b4c7d8 !important;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+  margin-top: 3px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+  margin-top: 3px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+  margin-top: 3px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+  margin-top: 3px;
+}
 
 #headertext {
-    font-family: Helvetica;
-    text-align: center !important;
-    font-size: 16px !important;
-    color: white;
+  font-family: Helvetica;
+  text-align: center !important;
+  font-size: 16px !important;
+  color: white;
 }
 
 #test {
-    transform: translate(50%, 50%)
+  transform: translate(50%, 50%);
 }
 
 div[class*="col"] {
-    text-align: center;
-    padding: 5px;
-  }
+  text-align: center;
+  padding: 5px;
+}
 
 .wedding-page {
-    background: url("../images/cover-7.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
+  background: url("../images/cover-7.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+.people-page {
+  background: url("../images/people-wallpaper.png") no-repeat center center
+    fixed !important;
+  background-size: cover !important;
+}
+
+.wedding-panel {
+  background: url("../images/panel-bg.png") no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 
 .frame-test {
-    max-width : 100%; /* or max-width : 100% */
-    height: auto; 
-    overflow: hidden;
-    position: absolute;
+  max-width: 100%; /* or max-width : 100% */
+  height: auto;
+  overflow: hidden;
+  position: absolute;
 }
 
 .groom-panel {
-    background: url("../images/gabe2.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
+  background: url("../images/gabe2.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 
 .bride-panel {
-    background: url("../images/cover-7.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
+  background: url("../images/cover-7.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 
 .theme-wedding {
@@ -81,65 +108,64 @@ div[class*="col"] {
 }
 
 .md .navbar .title {
-    text-align: center;
-    width: 100%;
-    }
+  text-align: center;
+  width: 100%;
+}
 
 img.responsive {
-    max-width : 100%; /* or max-width : 100% */
-    height: auto; 
+  max-width: 100%; /* or max-width : 100% */
+  height: auto;
 }
 
 .icon-responsive {
-    max-width : 100%; /* or max-width : 100% */
-    height: auto; 
+  max-width: 100%; /* or max-width : 100% */
+  height: auto;
 }
 
 #logo {
-    background: url("../images/logo.png");
-    background-size: cover !important;
+  background: url("../images/logo.png");
+  background-size: cover !important;
 }
 
 #tab-1 {
-    background: url("../images/cover-2-edit.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
+  background: url("../images/cover-2-edit.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 
 #tab-1 {
-    background: url("../images/cover-2-edit.jpg") no-repeat center center fixed !important;
-    background-size: cover !important;
+  background: url("../images/cover-2-edit.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
 }
 
 @font-face {
-    font-family: 'Framework7 Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Framework7Icons-Regular.eot");
-    src: local('Framework7 Icons'),
-       local('Framework7Icons-Regular'),
-       url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
-       url("../fonts/Framework7Icons-Regular.woff") format("woff"),
-       url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
-  }
-  
-  .f7-icons, .framework7-icons {
-    font-family: 'Framework7 Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-feature-settings: "liga";
-    -moz-font-feature-settings: "liga=1";
-    -moz-font-feature-settings: "liga";
-    font-feature-settings: "liga";
-  }
-  
+  font-family: "Framework7 Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Framework7Icons-Regular.eot");
+  src: local("Framework7 Icons"), local("Framework7Icons-Regular"),
+    url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+    url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+    url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+}
+
+.f7-icons,
+.framework7-icons {
+  font-family: "Framework7 Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
