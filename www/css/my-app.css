@@ -29,6 +29,14 @@
   font-size: 8px !important;
 }
 
+.button.color-wedding {
+  background-color: #b4c7d8 !important;
+}
+
+.button.color-wedding-text {
+  color: #8baecc !important;
+}
+
 .toolbar-custom {
   height: 40px !important;
 }
