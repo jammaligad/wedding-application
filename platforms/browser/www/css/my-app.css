@@ -13,6 +13,37 @@
   height: auto;
 }
 
+/* SWIPER */
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 100%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+
 #header {
   font-family: Helvetica;
   font-weight: bold;
@@ -98,6 +129,25 @@ div[class*="col"] {
 
 .people-page {
   background: url("../images/people-wallpaper.png") no-repeat center center
+    fixed !important;
+  background-size: cover !important;
+}
+
+.program-page {
+  background: url("../images/program/j&g-65.jpg") no-repeat center center
+    fixed !important;
+  background-size: cover !important;
+}
+
+.attire-page {
+  background: url("../images/panel-bg.png") no-repeat center center
+    fixed !important;
+  background-size: cover !important;
+}
+
+
+.location-page {
+  background: url("../images/venue/7.jpg") no-repeat center center
     fixed !important;
   background-size: cover !important;
 }
